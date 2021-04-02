@@ -1,0 +1,45 @@
+.container {
+   width: 940px;
+   margin: 0 auto;
+}
+.homeH1 {
+   font-family: Open Sans;
+   font-weight: bold;
+   font-size: 47px;
+   line-height: 1.36;
+   color: #070707;
+
+}
+.header {
+   border-bottom: 2px solid #828282;
+}
+.nav__list {
+   list-style: none;
+   padding: 0;
+   text-align: center;
+   margin: 30px 0;
+}
+.nav__item {
+   display: inline-block;
+   margin: 0 15px ;
+}
+.nav__link {
+   text-decoration: none;
+   /* text-transform: capitalize; */
+   font-family: Open Sans;
+   font-size: 18px;
+   line-height: 1.4;
+   color: #828282;
+   padding: 0 3px;
+   
+}
+.nav__item:first-letter {
+   text-transform: uppercase;
+}
+.nav__link__active {
+   color: #000;
+}
+.home__img {
+   margin-bottom: 100px;
+   width: 100%;
+}
