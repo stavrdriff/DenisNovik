@@ -111,8 +111,14 @@ footer h1 {
 
 .progIcon img {
    margin-bottom: 24px;
+   transition: 1s
 }
-
+.progIcon img:hover {
+   transform: rotateZ(1turn);
+}
+.stars img:hover {
+   transform: rotateY(1turn);
+}
 .skillsP {
    margin: 70px auto 80px;
    font-family: Open Sans;
@@ -140,7 +146,6 @@ footer h1 {
    text-align: center;
 }
 .portfolio a {
-   text-decoration: none;
    font-family: Open Sans;
    font-size: 18px;
    line-height: 1.4;
@@ -154,4 +159,100 @@ footer h1 {
 footer {
    width: 100%;
    height: 680px;
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 65px;
+}
+footer p {
+   font-family: Open Sans;
+   font-size: 18px;
+   line-height: 1.4;
+   margin-top: 21px;
+}
+footer button {
+   width: 178px;
+   height: 40px;
+   border: 1px solid #000;
+   border-radius: 20px;
+   background: #000;
+   color: #fff;
+   font-family: Open Sans;
+   font-weight: bold;
+   font-size: 18px;
+   margin-top: 78px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   cursor: pointer;
+}
+footer button:hover {
+   transition: 0.5s;
+   background: #828282;
+   border: 1px solid #828282;
+   color: #000;
+   box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+.socials {
+   margin-top: 37px;
+}
+.linkedin {
+   margin: 0 30px;
+   display: inline-block;
+   background: url(../img/LinkedIn.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.linkedin:hover {
+   transition: 0.5s;
+   background: url(../img/LinkGr.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.instagram {
+   margin: 0 30px;
+   display: inline-block;
+   background: url(../img/Istagram.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.instagram:hover {
+   transition: 0.5s;
+   background: url(../img/InstaGr.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.behance {
+   margin: 0 30px;
+   display: inline-block;
+   background: url(../img/Behance.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.behance:hover {
+   transition: 0.5s;
+   background: url(../img/BehGr.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.dribble {
+   margin: 0 30px;
+   display: inline-block;
+   background: url(../img/Dribble.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.dribble:hover {
+   transition: 0.5s;
+   background: url(../img/DriGr.png) no-repeat;
+   width: 42px;
+   height: 42px;
+}
+.end {
+   margin-top: 43px;
+   font-family: Open Sans;
+   font-size: 14px;
+   line-height: 1.35;
+   color: #828282;
+}
+.end a {
+   text-decoration: none;
+   color: #828282;
 }
