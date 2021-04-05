@@ -52,11 +52,11 @@
 }
 .aboutMe {
    width: 100%;
-   height: 500px;
+   
    background: #F6F6F6;
    margin: 0 auto;
    box-sizing: border-box;
-   padding-top: 70px;
+   padding: 110px 0 80px;
    text-align: center;
 }
 .aboutMe h1,
@@ -79,11 +79,11 @@ footer h1 {
 }
 .skills {
    width: 100%;
-   height: 610px;
+
    text-align: center;
    margin: 0 auto;
    box-sizing: border-box;
-   padding-top: 75px;
+   padding: 75px 0 110px;
 }
 .programs {
    width: 100%;
@@ -135,17 +135,18 @@ footer h1 {
 }
 .portfolio {
    width: 100%;
-   height: 2250px;
+  
    background: #F6F6F6;
    text-align: center;
    box-sizing: border-box;
-   padding-top: 90px;
+   padding: 90px 0 140px;
 }
 .portfolio h1 {
    font-family: Open Sans;
    font-weight: bold;
    font-size: 34px;
    line-height: 1.35;
+   margin-bottom: 70px;
 }
 .portfolio {
    margin: 0 auto;
@@ -156,18 +157,17 @@ footer h1 {
    font-size: 18px;
    line-height: 1.4;
    color: #070707;
+   
 }
 .portfolio img {
    width: 936px;
    height: 532px;
-   margin-top: 90px;
 }
 footer {
    width: 100%;
-   height: 680px;
    margin: 0 auto;
    text-align: center;
-   padding-top: 65px;
+   padding: 65px 0 235px;
 }
 footer p {
    font-family: Open Sans;
