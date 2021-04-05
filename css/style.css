@@ -55,7 +55,7 @@
    
    background: #F6F6F6;
    margin: 0 auto;
-   box-sizing: border-box;
+
    padding: 110px 0 80px;
    text-align: center;
 }
@@ -82,7 +82,7 @@ footer h1 {
 
    text-align: center;
    margin: 0 auto;
-   box-sizing: border-box;
+ 
    padding: 75px 0 110px;
 }
 .programs {
@@ -112,7 +112,7 @@ footer h1 {
 .progIcon img {
    margin-bottom: 24px;
    transition: 1s;
-   box-sizing: border-box;
+
 }
 .progIcon img:hover {
    transform: rotateZ(1turn);
@@ -138,7 +138,7 @@ footer h1 {
   
    background: #F6F6F6;
    text-align: center;
-   box-sizing: border-box;
+
    padding: 90px 0 40px;
 }
 .portfolio h1 {
