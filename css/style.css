@@ -106,15 +106,21 @@ footer h1 {
 .stars {
    display: flex;
    justify-content: space-between;
-   bottom: 0;
+   margin-bottom: 0;
 }
 
 .progIcon img {
    margin-bottom: 24px;
-   transition: 1s
+   transition: 1s;
+   box-sizing: border-box;
 }
 .progIcon img:hover {
    transform: rotateZ(1turn);
+}
+.progIcon p {
+   width: 80px;
+   height: 30px;
+   margin-bottom: 60px;
 }
 .stars img:hover {
    transform: rotateY(1turn);
