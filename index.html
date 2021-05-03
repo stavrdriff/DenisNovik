@@ -17,6 +17,13 @@
 <body>
    <div class="container">
       <header class="header">
+         <input id="burger" type="checkbox" class="burger">
+         <label for="burger" class="burger_label">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+
+         </label>
          <nav class="nav">
             <ul class="nav_list">
                <li class="nav_item"><a class="nav_link nav_link_active" href="#home">home</a></li>
@@ -32,7 +39,10 @@
       <section id="home" class="home">
          <div class="container">
             <h1 class="homeH1">Denis Novik</h1>
-            <img class="home_img" src="img/denisnovik.jpg" alt="Denis Novik photo">
+            <div class="home_img">
+               <img src="img/denisnovik.jpg" srcset=" img/BSPP2266x705.jpg 705w, img/denisnovik.jpg 940w "
+                  alt="Denis Novik photo">
+            </div>
          </div>
       </section>
       <section id="aboutMe" class="aboutMe">
@@ -91,19 +101,25 @@
          <div class="container">
             <h1>Portfolio</h1>
             <div class="portfItem">
-               <img src="img/Portf1.jpg" alt="Denis Novik Portfolio">
+               <div class="home_img">
+                  <img src="img/Portf1.jpg" alt="Denis Novik Portfolio">
+               </div>
                <div class="portfA">
                   <a href="#">Online fashion store - Homepage</a>
                </div>
             </div>
             <div class="portfItem">
-               <img src="img/Portf2.jpg" alt="Denis Novik Portfolio">
+               <div class="home_img">
+                  <img src="img/Portf2.jpg" alt="Denis Novik Portfolio">
+               </div>
                <div class="portfA">
                   <a href="#">Reebok Store - Concept</a>
                </div>
             </div>
             <div class="portfItem">
-               <img src="img/Portf3.jpg" alt="Denis Novik Portfolio">
+               <div class="home_img">
+                  <img src="img/Portf3.jpg" alt="Denis Novik Portfolio">
+               </div>
                <div class="portfA">
                   <a href="#">Braun Landing Page - Concept</a>
                </div>

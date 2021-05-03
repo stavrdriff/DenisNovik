@@ -1,19 +1,19 @@
 @font-face {
-   font-family: 'Gilroy-Bold';
+   font-family: "Gilroy-Bold";
    src: url(../fonts/Gilroy-Bold.ttf);
-  }
-
+}
 
 .container {
-   width: 940px;
+   width: 90%;
+   max-width: 940px;
    margin: 0 auto;
 }
 .home {
    width: 100%;
-   height: 600px;
+   /* height: 600px; */
 }
 .homeH1 {
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-weight: bold;
    font-size: 47px;
    line-height: 1.36;
@@ -30,12 +30,12 @@
 }
 .nav_item {
    display: inline-block;
-   margin: 0 15px ;
+   margin: 0 15px;
 }
 .nav_link {
    text-decoration: none;
    /* text-transform: capitalize; */
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-size: 18px;
    line-height: 1.4;
    color: #828282;
@@ -50,10 +50,16 @@
 .home_img {
    width: 100%;
 }
+.home_img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
 .aboutMe {
    width: 100%;
-   
-   background: #F6F6F6;
+
+   background: #f6f6f6;
    margin: 0 auto;
 
    padding: 110px 0 80px;
@@ -63,10 +69,10 @@
 .skills h1,
 .portfolio h1,
 footer h1 {
-      font-family: Open Sans;
-      font-weight: bold;
-      font-size: 34px;
-      line-height: 1.35;
+   font-family: "Open Sans", sans-serif;
+   font-weight: bold;
+   font-size: 34px;
+   line-height: 1.35;
 }
 .aboutMe p {
    margin: 30px auto 60px;
@@ -82,23 +88,25 @@ footer h1 {
 
    text-align: center;
    margin: 0 auto;
- 
+
    padding: 75px 0 110px;
 }
 .programs {
    width: 100%;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 .progIcon {
    display: inline-block;
    text-align: center;
    width: 166px;
-   height: 223px;
+   margin: 0 auto;
+   /* height: 223px; */
 }
 .progIcon p {
    margin: 0 auto;
-   font-family: Gilroy-Bold;
+   font-family: "Gilroy-Bold", sans-serif;
    font-size: 14px;
    line-height: 17px;
    color: #828282;
@@ -112,7 +120,6 @@ footer h1 {
 .progIcon img {
    margin-bottom: 24px;
    transition: 1s;
-
 }
 .progIcon img:hover {
    transform: rotateZ(1turn);
@@ -135,14 +142,14 @@ footer h1 {
 }
 .portfolio {
    width: 100%;
-  
-   background: #F6F6F6;
+
+   background: #f6f6f6;
    text-align: center;
 
    padding: 90px 0 40px;
 }
 .portfolio h1 {
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-weight: bold;
    font-size: 34px;
    line-height: 1.35;
@@ -157,7 +164,7 @@ footer h1 {
    width: 260px;
 }
 .portfA a {
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-size: 18px;
    line-height: 1.4;
    color: #070707;
@@ -172,7 +179,7 @@ footer {
    padding: 65px 0 235px;
 }
 footer p {
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-size: 18px;
    line-height: 1.4;
    margin-top: 21px;
@@ -184,11 +191,11 @@ footer button {
    border-radius: 20px;
    background: #000;
    color: #fff;
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-weight: bold;
    font-size: 18px;
    margin-top: 78px;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    cursor: pointer;
 }
 footer button:hover {
@@ -196,7 +203,7 @@ footer button:hover {
    background: #828282;
    border: 1px solid #828282;
    color: #000;
-   box-shadow: 0 0 20px rgba(0,0,0,1);
+   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 .socials {
    margin-top: 37px;
@@ -255,7 +262,7 @@ footer button:hover {
 }
 .end {
    margin-top: 43px;
-   font-family: Open Sans;
+   font-family: "Open Sans", sans-serif;
    font-size: 14px;
    line-height: 1.35;
    color: #828282;
@@ -263,4 +270,47 @@ footer button:hover {
 .end a {
    text-decoration: none;
    color: #828282;
+}
+.burger {
+   display: none;
+}
+.burger_label {
+   display: none;
+   justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
+   width: 48px;
+   height: 48px;
+}
+.burger__line {
+   width: 90%;
+   height: 15%;
+   background: #000;
+   border-radius: 3px;
+}
+.burger:checked ~ .nav {
+   transform: translateY(0%);
+}
+@media (max-width: 1024px) {
+   .burger_label {
+      display: flex;
+   }
+   .nav_item {
+      display: block;
+      margin: 20px 0;
+   }
+   .nav_link {
+      padding: 5px;
+   }
+   .nav {
+      position: absolute;
+      width: 100vw;
+      background: #fff;
+      top: 50px;
+      left: 0;
+      transform: translateY(-150%);
+      transition: all 0.3s linear;
+      z-index: 1;
+      border-bottom: 2px solid #000;
+   }
 }
