@@ -6,37 +6,38 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/style.css">
+
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
    <title>Denis Novik</title>
 </head>
 
 <body>
-   <div class="container">
-      <header class="header">
-         <input id="burger" type="checkbox" class="burger">
-         <label for="burger" class="burger_label">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
 
-         </label>
+   <header id="header" class="header">
+      <div class="container">
+         <button id="burger" class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+         </button>
          <nav class="nav">
             <ul class="nav_list">
-               <li class="nav_item"><a class="nav_link nav_link_active" href="#home">home</a></li>
+               <li class="nav_item"><a class="nav_link" href="#home">home</a></li>
                <li class="nav_item"><a class="nav_link" href="#aboutMe">about me</a></li>
-               <li class="nav_item"><a class="nav_link" href="#skils">skils</a></li>
+               <li class="nav_item"><a class="nav_link" href="#skills">skils</a></li>
                <li class="nav_item"><a class="nav_link" href="#portfolio">portfolio</a></li>
                <li class="nav_item"><a class="nav_link" href="#contacts">contacts</a></li>
             </ul>
          </nav>
-      </header>
-   </div>
+      </div>
+   </header>
+
    <main>
-      <section id="home" class="home">
+      <section id="home" class="home sectionJs">
          <div class="container">
             <h1 class="homeH1">Denis Novik</h1>
             <div class="home_img">
@@ -45,7 +46,7 @@
             </div>
          </div>
       </section>
-      <section id="aboutMe" class="aboutMe">
+      <section id="aboutMe" class="aboutMe sectionJs">
          <div class="container">
             <h1>About me</h1>
             <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
@@ -57,7 +58,7 @@
             </p>
          </div>
       </section>
-      <section id="skills" class="skills">
+      <section id="skills" class="skills sectionJs">
          <div class="container">
             <h1>Skills</h1>
             <p class="skillsP">I work in such programs as</p>
@@ -97,7 +98,7 @@
             </div>
          </div>
       </section>
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio" class="portfolio sectionJs">
          <div class="container">
             <h1>Portfolio</h1>
             <div class="portfItem">
@@ -127,7 +128,7 @@
          </div>
       </section>
    </main>
-   <footer id="contacts">
+   <footer id="contacts" class="sectionJs">
       <div class="container">
          <h1>Contacts</h1>
          <p>Want to know more or just chat?<br>
@@ -143,11 +144,11 @@
                href="#">Behance</a>,<br><a href="#">Dribble</a></p>
       </div>
    </footer>
+   <button id="up" class="up">UP</button>
 
 
 
-
-
+   <script src="js/scripts.js"></script>
 
 
 </body>
